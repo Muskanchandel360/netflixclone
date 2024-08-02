@@ -8,7 +8,7 @@
     width: 100%;
     height: 100vh;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%) ,url(./IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_small\ -\ Copy.jpg);
-
+     border-bottom: 10px solid rgb(145, 132, 132);
 }
 .nav-bar{
     width: 100%;
@@ -45,7 +45,7 @@ span button{
 }
 .hero-section{
     width: 100%;
-    height: 400px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,12 +60,12 @@ span button{
 
 }
 .hero-section h6{
-    font-size: 1em;
+    font-size: 1.5em;
     color: white;
     margin-top: 15px;
 }
 .hero-section p{
-    font-size: 0.8em;
+    font-size: 1.5em;
     color: white;
     margin-top: 15px;
 }
@@ -92,4 +92,238 @@ span button{
     border-radius: 3px;
     margin-left: 5px;
 
+}
+#hide{
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid gray;
+    display: none;
+    height: 30px;
+    width: 250px;
+}
+/*hero section end*/
+
+.video-section{
+    width: 100%;
+    height: 350px;
+    border-bottom: 10px solid rgb(141, 133, 133);
+    display: flex;
+    
+}
+.right-part{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.right-part .text-part h1{
+    font-size: 3em;
+}
+ .right-part .text-part p{
+    font-size: 1em;
+    margin-top: 10px;
+ }
+.left-part{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.left-part video{
+    width: 350px;
+}
+ .video-section .left-part img{
+    width: 350px;
+    height: 200px;
+}
+/* video section end*/
+
+.faq-section{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border-bottom: 10px solid rgb(141, 133, 133);
+
+}
+.faq-part{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq-part h1{
+    font-size: 2em;
+    color: white;
+}
+.box-part{
+    width: 100%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box-part .box{
+    width: 70%;
+    height: 20%;
+    background-color: rgba(83, 82, 82, 0.909);
+    margin-top: 15px;
+}
+.box span{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+.box span p{
+    font-size: 1.5em;
+    color: white;
+}
+
+.faqlast-part{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.faqlast-part p{
+    font-size: 1.5em;
+    color: white;
+
+
+}
+.span-part {
+    width: 100%;
+    height: 80px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.span-part span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+
+}
+.span-part span input{
+    width: 40%;
+    height: 50px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.span-part span button{
+    width: 10%;
+    height: 50px;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+/*faq section end*/
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: black;
+padding-block: 50px;
+    
+}
+.heading-part{
+    width: 100%;
+    height: auto;
+    padding-left: 150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.heading-part p{
+    font-size: 1em;
+    color:white;
+
+}
+.heading-part a{
+    color: white;
+}
+
+.center-part{
+    width: 100%;
+    height:auto ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.center-part ul{
+    font-size: 1em;
+    list-style: none;
+    
+    
+}
+.center-part ul a{
+    color:white;
+    
+
+}
+.center-part ul li{
+    margin-top: 15px;
+}
+.end-part{
+    width: 100%;
+    height: auto;
+    padding-left: 150px;
+    margin-top: 30px;
+}
+.end-part button{
+    width: 15%;
+    height: 30px;
+    background: transparent;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color:white;
+}
+.end-part p{
+    margin-top: 15px;
+    color: white;
+}
+
+
+/*responsive code .....*/
+@media ( max-width: 480px) {
+    .main-container{
+        width: 100%;
+    }
+    #eng-btn{
+        display: none;
+
+    }
+    #hide{
+        display: inline;
+    }
+    .hero-section{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .hero-section span {
+        width: 70%;
+    display: flex;
+        flex-direction: column;
+    }
+    
+
+    
+    
 }
