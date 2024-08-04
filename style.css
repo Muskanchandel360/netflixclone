@@ -245,7 +245,7 @@ padding-block: 50px;
 .heading-part{
     width: 100%;
     height: auto;
-    padding-left: 150px;
+    padding-left: 60px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -262,8 +262,10 @@ padding-block: 50px;
     width: 100%;
     height:auto ;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-evenly;
+    padding-right: 450px;
+    
 }
 .center-part ul{
     font-size: 1em;
@@ -282,8 +284,8 @@ padding-block: 50px;
 .end-part{
     width: 100%;
     height: auto;
-    padding-left: 150px;
     margin-top: 30px;
+    padding-left: 60px;
 }
 .end-part button{
     width: 15%;
@@ -300,30 +302,141 @@ padding-block: 50px;
 
 
 /*responsive code .....*/
-@media ( max-width: 480px) {
+@media ( max-width: 768px) {
+    .main-container{
+        width: 100%;
+        height: auto;
+    }
+    .hero-section h1{
+        font-size: 2em;
+    }
+    .hero-section h6{
+        font-size: 1em;
+    }
+    .hero-section p{
+        font-size: 1em;
+    }
+    .video-section{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .right-part{
+        width: 100%;
+        height: 40%;
+    }
+    .left-part{
+        width: 100%;
+        height: 60%;
+    }
+    .right-part .text-part h1{
+        font-size: 1.5em;
+    }
+    .right-part .text-part p{
+        font-size: 1em;
+    }
+    .faq-section .faq-part h1{
+        font-size: 1.5em;
+    }
+    .faq-section .faqlast-part p{
+        font-size:1em;
+    } 
+    .footer{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* responsive 480px */
+@media (max-width:480px) {
+
     .main-container{
         width: 100%;
     }
+    .nav-bar{
+        width: 100%;
+        padding: 0;
+    }
+    .nav-bar img{
+        width: 50%;
+    }
+    .nav-bar span{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-bar span button{
+        width: 40%;
+        
+    }
     #eng-btn{
         display: none;
-
     }
     #hide{
         display: inline;
+        width: 40%;
+        
     }
-    .hero-section{
+    .hero-section {
+        width: 100%;
+    }
+    .hero-section h1{
+        font-size: 1.5em;
+    }
+    .hero-section  span {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    }
+    .hero-section span input{
+        width: 50%;
+    }
+    .hero-section span button{
+        width: 30%;
+        margin-top: 10px;
+    }
+    .video-section{
+        width: 100%;
+    }
+    .faq-section{
+        width: 100%;
+    }
+     .faqlast-part {
+        width: 100%;
+        
+    
+    }
+    .span-part {
         width: 100%;
         height: auto;
-        text-align: center;
-        margin-top: 50px;
     }
-    .hero-section span {
-        width: 70%;
-    display: flexgit;
+    .span-part span{
+        width: 100%;
+        height: auto;
+        display: flex;
         flex-direction: column;
     }
+    .span-part span button{
+        width: 30%;
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer{
+        width: 100%;
     
-
+    }
+    .center-part{
+        width: 100%;
+        padding-right: 0;
+    }
+    .end-part{
+        padding: 10px;
+    }
     
-    
-}
+    }
